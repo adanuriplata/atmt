@@ -1,0 +1,98 @@
+.form-big{
+  form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  text-align: center;
+  &__input{
+    padding: 5px;
+    width: 100%;
+    input, {
+        display: block;
+        width: 100%;
+        height: 44px;
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 1.62857;
+        color: #555555;
+        // background-color: #FFF9C4;
+        background-color: $secondary;
+        background-image: none;
+        border: 1px solid #e1e1e1;
+        border-radius: 0px;
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      }
+      textarea {
+        resize: none;
+        display: block;
+        width: 100%;
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 1.62857;
+        color: #555555;
+        // background-color: #FFFC4;
+        background-color: $secondary;
+        background-image: none;
+        border: 1px solid #e1e1e1;
+        border-radius: 0px;
+        -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+      }
+  }
+  &__button{
+    margin-top: 10px;
+    padding-left: 5px;
+    input{
+      border: solid 1px $secondary;
+      background: rgba(0,0,0,0);
+      padding: 10px 25px;
+      color: $secondary ;
+      cursor: pointer;
+      transition: 600ms;
+      &:hover{
+      background: $secondary;
+      color: black;
+      }
+    }
+  }
+  &__button-l{
+    margin-top: 10px;
+    padding-left: 5px;
+    input{
+      border: solid 1px $secondary;
+      background: $secondary;
+      color: $secondary-d;
+      padding: 10px 25px;
+      cursor: pointer;
+      transition: 600ms;
+      &:hover{
+      // background: rgba(0,0,0,0);
+      background: $main-d;
+      border: solid 1px $main-d;
+      //padding: 11px 26px;
+      color: black;
+      
+      }
+    }
+  }
+  &__correo, &__telefono{
+    @include md {
+    width: 50%;
+    } 
+  }
+   
+}
+
+textarea:focus, 
+input:focus{
+    outline: none !important;
+    border:2px solid $secondary-d;
+    // box-shadow: 0 0 10px $main-l;
+}
+
+textarea:focus {
+  padding: 7px 19px;
+}

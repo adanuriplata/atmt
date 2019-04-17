@@ -1,0 +1,40 @@
+.single-taller__hero {
+
+  @include md {
+    padding-top: 100px;
+  }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content__img{
+    
+    figure{
+      max-width: 450px;
+    }
+    @include md {
+      width: 50%;
+    }
+  }
+  &__content__text{
+    padding: 50px;
+    ul li{
+      list-style: none;
+      font-size: 12px;
+      color: $text-m;
+      span{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $text-g;
+        font-weight: bold;
+      }
+    }
+    
+    @include md {
+      width: 50%;
+      padding: 100px;
+    }
+  }
+} 

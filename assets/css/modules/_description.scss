@@ -1,0 +1,35 @@
+.description__container{
+    padding: $padding-section;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: $secondary-d;
+    min-height: 400px;
+}
+
+.description__text{ 
+    border-radius: 5px;
+    margin: 0 auto;
+    background: $main-l;
+    padding: 20px;
+    &__subtitle{
+        font-weight: 300;
+    }
+}
+
+.description__item{
+    width: 100%;
+    @include md{
+        width: 50%;
+    }
+}
+
+.description__gallery{
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+
+    &__item {
+           margin: 0 auto;
+    }
+}

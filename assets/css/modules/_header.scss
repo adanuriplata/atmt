@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background: $secondary;
+    padding-top: 10px;
+    @include cust(818) {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    &__logo{
+        max-width: 70px;
+        padding-left: 10px;
+        @include xl {
+        max-width: 90px;
+    }
+    }
+    &__menu{
+        padding: 10px 5px;
+    }
+
+    &__menu ul{
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__menu ul li{
+        padding: 8px 15px;
+        list-style: none;
+        a{
+            font-size: $menu-size;
+            text-decoration: none;
+            color: $black-text;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+        a:hover{
+            background: $main-l;
+            color: black;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);        
+        }
+    }
+}

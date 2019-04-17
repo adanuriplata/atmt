@@ -1,0 +1,87 @@
+.btn{
+  padding: 10px 0;
+}
+
+.btn a{
+  text-decoration: none;
+  font-size: 13px;
+   border: solid 1px $secondary-d;
+  color: $black;
+  background: $main;
+  padding: 10px 10px 10px 2px;
+  border-radius: 50px;
+  margin: 10px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  
+  &:hover{
+    padding: 13px 10px 13px 2px;
+    background: $hove-whatsapp;
+    color: white;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    .button-brush{
+      background: black;
+      color: white;
+      padding: 9px;
+    }
+    .button-whatsapp {
+      border-left: solid 1px $secondary-d;
+      font-size: 18px;
+      padding-left: 10px;
+    }
+    .button-text{
+      padding-right: 5px;
+    }
+  }
+}
+
+.button-brush,
+.button-whatsapp,
+.button-text{
+  display: inline;
+}
+
+.button-brush{
+    padding: 8px;
+    background: #ffffff;
+    margin-right: 4px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.button-whatsapp{
+  padding-left: 2px;
+  transition: 0.6s;
+}
+
+.button-text{
+  transition: 0.3s;
+}
+
+
+//
+// button more
+//
+
+.btn-more a{
+  text-decoration: none;
+  font-size: 12px;
+   border: solid 1px $secondary-d;
+  color: $black;
+  background: $main;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 10px;
+  text-transform: uppercase;
+  transition: 0.6s;
+  &:hover{
+    // padding: 13px 10px 13px 2px;
+    background: $secondary;
+    color: $text-m;
+    font-size: 13px;
+    // border-bottom-right-radius: 0;
+    // border-top-right-radius: 0;
+    border-radius: 5px;
+  }
+}

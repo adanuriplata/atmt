@@ -1,0 +1,39 @@
+/*!
+Theme Name: Artemix
+Theme URI: http: //conektica.com/
+Author: Conektica - Adan Uri Plata
+Author URI: http://conektica.com/
+Description: Artemix Theme.
+Version: 1.0.0
+Tags: arts, clean, minimal, modern, documentation
+*/
+
+// @import '../../node_modules/normalize.css/normalize.css';
+// @import '../../node_modules/aos/dist/aos.css';
+
+
+@import 'core/settings';
+@import 'core/hacks';
+
+@import 'base/normalize';
+@import 'base/base';
+
+//components
+@import 'components/shadows';
+@import 'components/buttons';
+@import 'components/forms';
+
+@import 'modules/header';
+@import 'modules/hero';
+@import 'modules/talleres';
+@import 'modules/description';
+@import 'modules/inscribirse';
+@import 'modules/historia';
+@import 'modules/footer';
+@import 'modules/visitanos';
+@import 'modules/tallerista';
+@import 'modules/content-taller';
+//hacks
+
+//Temporales
+@import 'temp/temp';

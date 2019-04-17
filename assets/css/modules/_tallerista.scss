@@ -1,0 +1,43 @@
+.tallerista__container{
+  padding: $padding-section;
+  padding-bottom: 80px;
+  background: $main;
+  color: $text-m;
+}
+.tallerista__wraper__flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.tallerista__title{
+  width: 100%;
+}
+.tallerista__beneficios{
+  padding-top: 20px;
+  ul li{
+    text-align: left;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 3px;
+    @include md {
+      display: block;
+    }
+    .icono{
+      font-size: 30px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.tallerista__gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__item{
+    max-width: 280px;
+    display: inline;
+    padding: 10px;
+  }
+}

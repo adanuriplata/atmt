@@ -1,0 +1,74 @@
+.talleres__container{
+    padding: $padding-section;
+    // background-image: url('//localhost:3000/wp-content/themes/artemix/assets/img/bg_talleres_1700*1200_3.png ');
+    background-image: url('assets/img/bg_talleres_1700*1200_3.png ');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.talleres__taller{
+    font-family: $second-font;
+    margin: 0 auto;
+    max-width: 340px;
+    padding: 20px 5px;
+    margin-top: 30px;
+    background: white;
+    &__thumbnail{
+        max-width: 270px;
+        margin: 0 auto;
+    }
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        h4 {
+            margin: 15px 0 14px 0;
+            font-size: $taller-title;
+            color: $black-text;
+        }
+        a{
+            color: $black-text;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $secondary-d;
+        }
+    }
+    &__data{
+        border-bottom: solid 1px $secondary-d;
+        font-size: $taller-data;
+        font-weight: 300;
+        padding: 0 10px 5px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        span{
+            font-weight: 600;
+        }
+        div{
+            width: 50%;
+            padding-bottom: 5px;
+        }
+        div:nth-child(even){
+            text-align: right;
+        }
+        &__precio{
+            font-size: $taller-price;
+            font-weight: 600;
+        }
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        padding: 15px 10px 5px 10px;
+        text-align: center;
+    }
+
+}
+
+.wrapper_grid_talleres {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 0;
+}

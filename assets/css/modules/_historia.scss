@@ -1,0 +1,36 @@
+.historia__container{
+    padding: $padding-section;
+    background-image: url('assets/img/bg_historia_1700*700.jpg ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.historia__text{
+    // margin: 0 auto;
+    background: $black;
+    color: $main-l;
+    padding: 25px 15px;
+    @include md {
+        max-width: 400px;
+    }
+    @include xl {
+        margin-right: 80px;
+    }
+    &__title {
+       text-indent: 1em;
+       h3 {
+           padding-left: 10px;
+       }
+       &__author{
+           font-size: 22px;
+           margin-top: 20px;
+       }
+    }
+    &__description {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+}
